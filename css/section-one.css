@@ -80,8 +80,14 @@
 }
 
 .blog__main {
+  
+    background: url(../assets/img/background-pattern.png) no-repeat;
+    padding: 4rem 0 3rem;
+}
+
+.blog__main .container {
     max-width: 76rem;
-    margin: 4rem auto 3rem;
+    margin: 0 auto;
     display: grid;
     gap: 2rem;
 }
@@ -171,8 +177,12 @@
 
 @media (min-width: 768px) {
     .blog__main {
+        padding: 6rem 0 4rem;
+    }
+
+    .blog__main .container {
         grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
-        margin: 6rem auto 4rem;
+        
     }
 
     .blog__footer button {
