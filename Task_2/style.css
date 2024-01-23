@@ -1,105 +1,701 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Body styles */
 body {
-    width: 80%;
-    text-align: center;
-    margin: 0 auto;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-.steps-users {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    /* width: 500px; */
+/* section 2 styles beginning */
+
+.steps-user-content p {
+  color: #52525b;
+  font-size: 14px;
 }
 
-.steps-users > div .steps-user_centric {
-    /* text-align: center; */
-    /* padding-top: 2rem; */
-    line-height: 30px;
+.steps-user-content h2 {
+  color: #18181b;
+  font-size: 21px;
 }
 
-.steps-users > div .steps-user_centric h1 {
-    font-size: 42px;
-    font-weight: 700;
-    color: var(--gray-900, #18181B);  
-} 
+.steps-user-content {
+  width: fit-content;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem 2rem 4rem;
+}
 
-.steps-users > div .steps-user_centric p {
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--gray-600, #52525B);
+.steps-user_centric {
+  text-align: center;
+  padding-bottom: 2rem;
 }
 
 .steps-services {
+  background-color: #f5f5f5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.steps-services-card-1 {
+  border: 1px solid #e4e4e7;
+  border-style: none solid solid none;
+  padding: 24px;
+  text-align: center;
+}
+.steps-services-card-2 {
+  border: 1px solid #e4e4e7;
+  border-style: none solid solid none;
+  padding: 24px;
+  text-align: center;
+}
+.steps-services-card-3 {
+  border: 1px solid #e4e4e7;
+  border-style: none none solid none;
+  padding: 24px;
+  text-align: center;
+}
+.steps-services-card-4 {
+  border: 1px solid #e4e4e7;
+  border-style: none solid none none;
+  padding: 24px;
+  text-align: center;
+}
+
+.steps-services-card-5 {
+  border: 1px solid #e4e4e7;
+  border-style: none solid none none;
+  padding: 24px;
+  text-align: center;
+}
+
+.steps-services-card-6 {
+  border: 1px solid #e4e4e7;
+  border-style: none none none none;
+  padding: 24px;
+  text-align: center;
+}
+
+/* pricing Section */
+
+.pricing {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  padding: 2rem 0rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.toggle-btn {
+  margin: 0 1rem;
+}
+
+.checkbox {
+  display: none;
+}
+
+.sub {
+  background: linear-gradient(
+    135deg,
+    rgb(228, 230, 249) 0%,
+    rgb(65, 65, 66) 100%
+  );
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 1.5rem;
+  width: 3.3rem;
+  border-radius: 1.6rem;
+}
+
+.circle {
+  background: #fff;
+  height: 1.4rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .sub .circle {
+  transform: translateX(1.7rem);
+}
+
+/* card styles */
+/* card */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  max-width: 100%;
+}
+
+.card {
+  color: #000;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cards .card.active {
+  background: #1d4ed8;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.card.active p {
+  color: #fff;
+}
+
+.details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.details ul li {
+  display: flex;
+  font-size: 12px;
+  padding-top: 8px;
+}
+
+.details i {
+  display: block;
+  width: 12px;
+  text-align: center;
+  padding: 4px;
+  background-color: #e8edfb;
+  margin-right: 12px;
+  border: none;
+  border-radius: 50%;
+}
+
+.fa-check {
+  color: #1d4ed8;
+  font-weight: light;
+}
+
+.fa-times {
+  color: #000;
+  font-weight: light;
+}
+.card p {
+  font-size: 12px;
+}
+
+.card p span {
+  font-size: 45px;
+  font-weight: 500;
+  color: #000;
+  padding-right: 8px;
+}
+.card .amt {
+  display: flex;
+  align-items: center;
+}
+
+.cards .card button {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+  color: #1d4ed8;
+  border: 1.5px solid #1d4ed8;
+  font-family: "poppins";
+  cursor: pointer;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.bottom-task {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-around;
+  max-width: 100%;
+  height: 100vh;
+  padding: 4rem;
+}
+
+.bottom-task h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #18181b;
+}
+
+.bottom-task .btn {
+  padding-top: 12px;
+}
+
+.bottom-task button {
+  width: auto;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  background-color: #18181b;
+}
+
+.bottom-task-info {
+  border: 1px solid #a9a9fe1f;
+  border-radius: 4px;
+}
+
+.task-icons {
+  border-bottom: 1px solid #a9a9fe1f;
+  padding: 16px;
+}
+
+.tasks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+}
+
+.bottom-task-detail {
+  border: 1px solid #f4f4f5;
+  padding: 16px;
+}
+
+.bottom-task-detail h3 {
+  color: #18181b;
+  font-weight: 400;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container p {
+  padding-left: 8px;
+  color: #18181b;
+}
+
+.container span {
+  color: #71717a;
+}
+
+/* section 2 responsive styles */
+/* bottom task responsive styles */
+/* mobile */
+@media screen and (max-width: 768px) {
+  .bottom-task {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .bottom-task h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #18181b;
+  }
+
+  .bottom-task .btn {
+    padding-top: 12px;
+  }
+
+  .bottom-task button {
+    width: auto;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    background-color: #18181b;
+  }
+
+  .bottom-task-info {
+    border: 1px solid #a9a9fe1f;
+    border-radius: 4px;
+  }
+
+  .task-icons {
+    border-bottom: 1px solid #a9a9fe1f;
+    padding: 16px;
+  }
+
+  .tasks {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    /* border: 2px solid black; */
-    margin-top: 3.5rem;
-    /* gap: 25px; */
+    padding: 2px;
+  }
+
+  .bottom-task-detail {
+    border: 1px solid #f4f4f5;
+    padding: 16px;
+  }
+
+  .bottom-task-detail h3 {
+    color: #18181b;
+    font-weight: 400;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .container p {
+    padding-left: 8px;
+    color: #18181b;
+  }
+
+  .container span {
+    color: #71717a;
+  }
 }
 
-.steps-services_card > div {
-    padding: 10px;
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .bottom-task {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .bottom-task .info {
+    width: 100%;
+  }
+  .bottom-task h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #18181b;
+  }
+
+  .bottom-task .btn {
+    padding-top: 12px;
+  }
+
+  .bottom-task button {
+    width: auto;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    background-color: #18181b;
+  }
+
+  .bottom-task-info {
+    border: 1px solid #a9a9fe1f;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .task-icons {
+    border-bottom: 1px solid #a9a9fe1f;
+    padding: 16px;
+  }
+
+  .tasks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+  }
+
+  .bottom-task-detail {
+    border: 1px solid #f4f4f5;
+    padding: 16px;
+  }
+
+  .bottom-task-detail h3 {
+    color: #18181b;
+    font-weight: 400;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .container p {
+    padding-left: 8px;
+    color: #18181b;
+  }
+
+  .container span {
+    color: #71717a;
+  }
 }
 
-.steps-services_card > div p {
-    font-size: 16px;
-    line-height: 26px;
+/* pricing responsive styles */
+/* mobile */
+@media screen and (max-width: 768px) {
+  .pricing {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    padding: 2rem 0rem;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .toggle {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .toggle-btn {
+    margin: 0 1rem;
+  }
+
+  .checkbox {
+    display: none;
+  }
+
+  .sub {
+    background: linear-gradient(
+      135deg,
+      rgb(228, 230, 249) 0%,
+      rgb(65, 65, 66) 100%
+    );
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1.5rem;
+    width: 3.3rem;
+    border-radius: 1.6rem;
+  }
+
+  .circle {
+    background: #fff;
+    height: 1.4rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+
+  .checkbox:checked + .sub .circle {
+    transform: translateX(1.7rem);
+  }
+
+  /* card styles */
+  /* card */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2rem;
+    max-width: 100%;
+    padding: 12px;
+  }
+
+  .card {
+    color: #000;
+    border-radius: 0.8rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .cards .card.active {
+    background: #1d4ed8;
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 1;
+  }
 }
 
-.steps-services_card > div h2 {
-    font-size: 21px;
-    line-height: 28px;
-    padding-top: 25px;
-    
-    /* line-height: 26px; */
+/*tablet */
+@media screen and (max-width: 1024px) {
+  .pricing {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    padding: 2rem 0rem;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .toggle {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .toggle-btn {
+    margin: 0 1rem;
+  }
+
+  .checkbox {
+    display: none;
+  }
+
+  .sub {
+    background: linear-gradient(
+      135deg,
+      rgb(228, 230, 249) 0%,
+      rgb(65, 65, 66) 100%
+    );
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1.5rem;
+    width: 3.3rem;
+    border-radius: 1.6rem;
+  }
+
+  .circle {
+    background: #fff;
+    height: 1.4rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+
+  .checkbox:checked + .sub .circle {
+    transform: translateX(1.7rem);
+  }
+
+  /* card styles */
+  /* card */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2rem;
+    max-width: 100%;
+    padding: 12px;
+  }
+
+  .card {
+    color: #000;
+    border-radius: 0.8rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .cards .card.active {
+    background: #1d4ed8;
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 1;
+  }
 }
 
+/* steps responsive styles */
+/* mobile */
+@media screen and (max-width: 768px) {
+  .steps-user-content {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem 2rem 4rem;
+  }
 
-.steps-services_card {
-    width: 28%;
-    flex: 1 1 auto;
-}
+  .steps-user_centric {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
 
-/* .steps-services_card:not(:last-child) {
-    border-right: 1px solid black; 
-    border-bottom: 1px solid black;  
-} */
+  .steps-services {
+    background-color: #f5f5f5;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-/* .steps-services_border-1 {
-    border-right: 1px solid #E4E4E7;;
-
-    /* border-bottom: ; */
-
-.steps-services_card {
-    border-width: 1px;
-}
-
-.steps-services_border-1 {
+  .steps-services-card-1 {
+    border: 1px solid #e4e4e7;
     border-style: none solid solid none;
-    /* border-width: 1px; */
-}
-
-.steps-services_border-2{
+    padding: 24px;
+    text-align: center;
+  }
+  .steps-services-card-2 {
+    border: 1px solid #e4e4e7;
     border-style: none solid solid none;
-}
-
-.steps-services_border-3 {
+    padding: 24px;
+    text-align: center;
+  }
+  .steps-services-card-3 {
+    border: 1px solid #e4e4e7;
     border-style: none none solid none;
-}
-
-.steps-services_border-4 {
+    padding: 24px;
+    text-align: center;
+  }
+  .steps-services-card-4 {
+    border: 1px solid #e4e4e7;
     border-style: none solid none none;
-}
+    padding: 24px;
+    text-align: center;
+  }
 
-.steps-services_border-5 {
+  .steps-services-card-5 {
+    border: 1px solid #e4e4e7;
     border-style: none solid none none;
-}
+    padding: 24px;
+    text-align: center;
+  }
 
+  .steps-services-card-6 {
+    border: 1px solid #e4e4e7;
+    border-style: none none none none;
+    padding: 24px;
+    text-align: center;
+  }
+}
