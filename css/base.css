@@ -29,13 +29,3 @@ a {
 img {
     max-width: 100%;
 }
-
-.radius-125 {
-    border-radius: 1.25rem;
-}
-
-
-.m-width {
-	max-width: 1440px;
-	margin: 0 auto;
-}
