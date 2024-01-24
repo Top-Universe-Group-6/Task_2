@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root { 
+    --grey-50:#F9F5FF;
+    --gray-300: #D0D5DD;
+    --gray-500: #667085;
+    --gray-900: #101828;
+    --primary-700: #6941C6;
+    --primary-900: #42307D;
+    --white: #fff;
+}
+
+body {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
