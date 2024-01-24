@@ -1,0 +1,398 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/* Section 3 styles beginning */
+/* Section 3 styles beginning */
+/* Section 3 styles beginning */
+
+.section-3 {
+    width: 1440px;
+    height: 1024px;
+    background-color: #ffffff;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 55px;
+  }
+  .container {
+    width: 1440px;
+    height: 1024px;
+    background-color: #f3f3f3;
+  }
+  .container .welcome {
+    width: 730px;
+    left: 0;
+    background-size: 100% 100%;
+    height: 1024px;
+    top: 0;
+  }
+  .container .rectangle {
+    width: 730px;
+    height: 1024px;
+    top: 0;
+    left: 0;
+  }
+  .container .text {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    position: absolute;
+    top: 709px;
+    left: 100px;
+  }
+  .container .community-t {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Inter", Helvetica;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 56.7px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .container .join {
+    display: inline-flex;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 22px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .container .join:hover {
+    background-color: #a340a8;
+  }
+  .container .text-email {
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #1e1e1e;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  .container .login {
+    width: 710px;
+    left: 730px;
+    position: absolute;
+    height: 1024px;
+    top: 0;
+  }
+  .container .input-area {
+    display: flex;
+    width: 710px;
+    height: 1024px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    top: 0;
+    left: 0;
+  }
+  .container .div {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    flex: 0 0 auto;
+  }
+  .container .continue {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 0 0 auto;
+  }
+  .container .text-1 {
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Inter", Helvetica;
+    font-weight: 500;
+    color: #1e1e1e;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .container .text-2 {
+    width: fit-content;
+    font-family: "Inter", Helvetica;
+    font-weight: 500;
+    color: #1e1e1e;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  .container .input-frame {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 0 0 auto;
+  }
+  .container .email-frame {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 0 0 auto;
+  }
+  .container .email-field {
+    display: flex;
+    width: 324px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    border-radius: 7px;
+  }
+  .container .text-3 {
+    width: 324px;
+    margin-top: -1px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #040101;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  .container .password-field {
+    width: 324px;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+  .container .login-button {
+    display: flex;
+    align-self: stretch;
+    width: 100%;
+    background-color: #1e1e1e;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 22px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 4px;
+  }
+  .container .login-button:hover {
+    background-color: #7f7171;
+  }
+  .container .text-4 {
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #fbf6f6;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  /* login ----2 */ 
+  .login-2 {
+    padding-bottom: 100px;
+    width: 1440px;
+    height: 1024px;
+    background-color: #f3f3f3;
+  }
+  .login-2 .overlap-group {
+    height: 1024px;
+    background-image: url(./img/Rectangle\ 3.png);
+    background-size: 100% 100%;
+  }
+  .login-2 .frame {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 46.29px;
+    top: 336px;
+    left: 152px;
+    display: inline-flex;
+    position: relative;
+  }
+  .login-2 .welcome-to-the {
+    margin-top: -1.45px;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 800;
+    font-size: 82px;
+    position: relative;
+    width: fit-content;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .login-2 .text-wrapper {
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 24px;
+    position: relative;
+    width: fit-content;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .login .div-wrapper {
+    align-items: center;
+    justify-content: center;
+    gap: 14.47px;
+    padding: 17.36px 31.82px;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    border-radius: 11.57px;
+    display: inline-flex;
+    position: relative;
+  }
+  .login-2 .div {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.45px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #1e1e1e;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  /* login -----1 */
+  .login-1 {
+    width: 1440px;
+    height: 1024px;
+    background-color: #f3f3f3;
+  }
+  .login-1 .login-1-group{
+    height: 1024px;
+    background-image: url(./assets/images/Rectangle\ 2.png);
+    background-size: 100% 100%;
+  }
+  .login-1 .frame-login-1 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 46.29px;
+    top: 336px;
+    left: 152px;
+    display: inline-flex;
+    position: relative;
+  }
+  .login-1 .wback {
+    margin-top: -1,45px;
+    font-family: "Inter-ExtraBold" Helvetica;
+    font-size: 82px;
+    width: fit-content;
+    color: #ffffff;
+    letter-spacing: 0;
+    position: relative;
+  }
+  .login-1 .l-p-text {
+    font-family: "Inter-ExtraBold" Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    width: fit-content;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .login-1 .div-btn {
+    display: inline-flex;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 22px;
+    flex: 0 0 auto;
+    border-radius: 11.57px;
+    cursor: pointer;
+  }
+  .login-1 .div-btn:hover {
+    background-color: #2bcc07;
+  }
+  .login-1 .div {
+    margin-top: -1,45px;
+    font-family: "Inter-ExtraBold" Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    width: fit-content;
+    color: #0c0303;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+  }
+  /* profile ------ */
+  .profile {
+    width: 1440px;
+    height: 1024px;
+    background-color: #f3f3f3;
+    padding-left: 150px;
+  }
+  .profile .wrapper {
+    gap: 45px;
+    top: 105px;
+    left: 180px;
+    display: inline-flex;
+    align-items: flex-start;
+  }
+  .profile .div-p {
+    flex-direction: column;
+    gap: 27px;
+    float: 0 0 auto;
+    background-color: #ffffff;
+    display: inline-flex;
+    align-items: flex-start;
+  }
+  .profile .Rectangle {
+    width: 517px;
+    height: 431px;
+  }
+  .profile .p-wrapper {
+    gap: 64px;
+    padding: 40px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 0 0 auto;
+  }
+  .profile .div-2 {
+    gap: 16px;
+    display: inline-flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 0 0 auto;
+  }
+  .profile .p-text-1 {
+    width: fit-content;
+    margin-top: -1px;
+    font-family:  "Inter-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 24px;
+    color: #1e1e1e;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .profile .p-text-2 {
+    width: 477px;
+    font-family:  "Inter-Medium", Helvetica;
+    font-weight: 300;
+    color: #1e1e1e;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+/* section 3 styles ending */
+/* section 3 styles ending */
+/* section 3 styles ending */
+
+
