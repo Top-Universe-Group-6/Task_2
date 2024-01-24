@@ -104,10 +104,22 @@ body {
   flex-direction: column;
 }
 
+/* .pricing-header {
+  position: relative;
+} */
+
+.pricing-header>div.pricing-header_save {
+  position: absolute;
+  top: 174px;
+  left: 248px;
+  right: 0;
+}
+
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .toggle {
@@ -155,6 +167,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   margin-top: 2rem;
   max-width: 100%;
+  padding-top: 50px;
 }
 
 .card {
